@@ -1,0 +1,128 @@
+#feedbackModal i {
+    background: var(--primary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+#mainModal .closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 35px;
+    margin-top: -25px;
+}
+
+#feedbackModal .closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+#feedbackModal .closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mainModal .closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#feedbackModal {
+    display: none;
+}
+
+#mainModal {
+    display: none;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    filter: drop-shadow(0px 10px 20px black);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+#feedbackModal .modal-content .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* main modal form styling */
+#mainModal .modal-header {
+    background-color: rgba(140, 20, 252, 1);
+    color: #fff;
+    padding: 1rem;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 1rem;
+}
+
+.modal-body label {
+    display: block;
+}
+
+#mainModal .modal-body .form-group {
+    margin-bottom: 0.75rem;
+}
+
+#modalSubmit {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    margin: auto;
+    width: 70%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.45rem 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#modalSubmit:hover,
+#modalSubmit:focus {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+#mainModal .modal-body .form-group input,
+select {
+    width: 100%;
+    padding: 0.45rem;
+    margin-bottom: 0.75rem;
+    border: #ddd 1px solid;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

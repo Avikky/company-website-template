@@ -1,0 +1,282 @@
+.main-nav .nav-container .list-menu {
+    display: none;
+}
+
+.main-nav .nav-container .handburger {
+    display: initial;
+}
+
+#service .container {
+    display: block;
+    padding: 1rem;
+}
+
+div.mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    z-index: 2;
+    transition-duration: 1s;
+    transition: all;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.mobile-menu ul li {
+    width: 100%;
+    justify-self: start;
+    padding: 0.3rem;
+    border-bottom: 1px dotted #ddd;
+}
+
+.mobile-menu ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li:hover {
+    background: rgba(140, 20, 252, 1);
+    z-index: inherit;
+}
+
+
+
+/* Align item to left */
+#service .container .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Position icon */
+#service .container .item i {
+    margin-right: 1.3rem;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+/* aligning the gallery */
+#gallery img {
+    width: 500px;
+}
+
+#gallery .container-fluid .description {
+    width: 500px;
+    padding: .75rem;
+    background: #ddd;
+    border: 1px solid #444;
+}
+
+/* remove image in about section */
+#about .sub-container {
+    display: block;
+}
+
+#about .sub-container .right-img {
+    display: none;
+}
+
+#about .sub-container .item div>a {
+    margin-top: 1.5rem;
+}
+
+/* Postioning contact */
+#contact .container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .container .newsletter {
+    margin-left: 2rem;
+}
+
+/* Aligning Navbar */
+.main-nav .nav-container {
+    flex-direction: flex;
+    justify-content: space-between;
+}
+
+.main-nav .nav-container h1 {
+    text-align: center;
+    margin-top: -7px;
+    margin-bottom: 10px;
+}
+
+.main-nav .nav-container .handburger:focus,
+.handburger:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+/* Company / gallery section */
+
+
+#gallery img {
+    width: 100%;
+}
+
+#gallery .container-fluid .description {
+    width: 100%;
+    padding: .25rem;
+    background: #ddd;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+/* our team section [removing image]*/
+#our-team .container-fluid {
+    display: block;
+}
+
+#our-team .container-fluid .item-img {
+    display: none;
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+
+    /* utility class */
+    .hidden {
+        display: none;
+    }
+
+    div.mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        background: #333;
+        color: #fff;
+        z-index: 2;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        transition: all;
+    }
+
+    .mobile-menu ul li {
+        width: 100%;
+        justify-self: start;
+        padding: 0.3rem;
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .mobile-menu ul li a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu ul li:hover {
+        background: rgba(140, 20, 252, 1);
+        z-index: inherit;
+    }
+
+    .main-nav .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    .main-nav .nav-container .list-menu {
+        display: none;
+    }
+
+    .main-nav .nav-container .handburger h3 {
+        font-size: 10px;
+        margin-top: 10px;
+        padding-top: 1rem;
+    }
+
+    .main-nav .nav-container .handburger {
+        display: initial;
+    }
+
+    .main-nav .nav-container .handburger:focus,
+    .handburger:hover {
+        cursor: pointer;
+        filter: brightness(50%);
+    }
+
+    /* Positioning service section */
+
+    /* showcase alignment */
+    #showcase .showcase-content h1 {
+        font-size: 3rem;
+    }
+
+    /* our team section [removing image]*/
+    #our-team .container-fluid {
+        display: block;
+    }
+
+    #our-team .container-fluid .item-img {
+        display: none;
+    }
+
+    /* Arranging section title */
+    #our-team .right-item h1 {
+        margin-bottom: -2px;
+    }
+
+    /* clients */
+    #clients h1 {
+        margin-top: -2.5rem;
+    }
+
+    #clients .container .items {
+        display: flex;
+        flex-flow: nowrap;
+        padding: 0.2rem;
+        align-items: center;
+    }
+
+    #clients .container .items .fa-4x {
+        font-size: 3rem;
+    }
+
+    /* Company/gallery section */
+    #gallery h1 {
+        margin-top: -1.5rem;
+    }
+
+    #gallery img {
+        width: 100%;
+    }
+
+    #gallery .container-fluid .description {
+        width: 100%;
+        padding: .25rem;
+        background: #ddd;
+        border: 1px solid #444;
+        text-align: center;
+    }
+
+    #contact .container {
+        display: block;
+    }
+
+    #contact .container .contact-form {
+        margin-bottom: 2.5rem;
+    }
+
+    #contact .container .newsletter {
+        width: 100%;
+        margin: auto;
+        padding: 1.5rem 2rem;
+    }
+
+    #contact .container .newsletter .news-area button {
+        margin-left: 1rem;
+    }
+
+
+}

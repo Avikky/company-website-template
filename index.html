@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Afrik-Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" type="text/css" media="screen" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" type="text/css" media="screen" href="/css/widescreen.css" />
+
+    <link rel="stylesheet" href="fonts/fontawesome-all.css">
+    <link rel="shortcut icon" href="/img/tab-icon.png" type="image/x-icon">
+</head>
+
+<body id="home">
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h1 class="logo"><span class="text-primary"><i class="fas fa-laptop fa-1x"></i> </span> Af<span class="text-primary">ri</span>k-H<span
+                    class="text-primary">u</span>b</h1>
+            <h3 class="handburger hidden" id="menu">Menu</h3>
+            <ul class="list-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#gallery">Company</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu" id="hide">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#gallery">Company</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Showcase Area -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">We Are Highering</h1>
+            <p class="align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, beatae consequuntur.
+                Aliquam eum, provident sed odio atque incidunt facilis. Ratione adipisci omnis iusto numquam quisquam!</p>
+            <a href="#about" class="btn" id="apply">Get Started</a>
+        </div>
+    </header>
+    <!-- This modal box is hidden by default -->
+    <div id="mainModal" class="modal main">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="text-center">Apply Now</h3>
+                <span class="closeBtn closeMainModalBtn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p id="errMsg" class="text-center error-color py-2"></p>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name" class="inputbox" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Eamil" class="inputbox" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="tel" name="contact" id="contact" placeholder="Phone number" class="inputbox"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="job">Available vaccancies</label>
+                        <select name="job" id="job" class="inputbox" required>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Engineer</option>
+                            <option value="ui">UI/UX Developer</option>
+                            <option value="graphics">Experienced Graphics Designer</option>
+                        </select>
+                    </div>
+                    <button id="modalSubmit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Feedback modal -->
+    <div id="feedbackModal" class="modal feedback">
+        <div class="modal-content">
+            <span class="closeBtn closeFeedbackBtn">&times;</span>
+            <div class="wrapper">
+                <P class="text-center"><i class="fas fa-laptop fa-2x"></i></P>
+                <p class="text-center">Thank You for applying, we'll get back to you</p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="py-1">
+        <div class="container">
+            <div class="sub-container">
+                <div class="item">
+                    <h2 class="m-heading text-center">About <span class="text-primary">Us</span></h2>
+                    <span class="underline"></span>
+                    <div>
+                        <h3><span class="m-heading">W</span>e <span class="m-heading">B</span>uild, <span class="m-heading">T</span>est
+                            and <span class="m-heading">D</span>eploy</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse omnis, temporibus .</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur itaque blanditiis
+                            explicabo totam perferendis iste eos dolorum minus voluptates! Alias.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta enim ducimus laboriosam
+                            molestiae libero nihil voluptates consequatur facilis consectetur accusantium!</p>
+
+                        <a href="#" class="btn modal-btn">Apply Now</a>
+                    </div>
+                </div>
+                <div class="right-img">
+                    <img src="./img/about.png" alt="workers">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section -->
+    <section id="service" class="py-1">
+        <h2 class="m-heading text-center">Services</h2>
+        <span class="underline"></span>
+        <div class="container">
+            <div class="item">
+                <i class="fas fa-globe fa-2x"></i>
+                <div>
+                    <h3 class="text-center">Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus vero quod eveniet
+                        veritatis! Officia impedit et expedita laudantium quaerat.</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fas fa-cogs fa-2x"></i>
+                <div>
+                    <h3 class="text-center">Soft Engineering</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus vero quod eveniet
+                        veritatis! Officia impedit et expedita laudantium quaerat.</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fas fa-hospital-symbol fa-2x"></i>
+                <div>
+                    <h3 class="text-center">I.T Hub</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellendus vero quod eveniet
+                        veritatis! Officia impedit et expedita laudantium quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our team section -->
+    <section id="our-team" class="py-1">
+        <div class="container-fluid">
+            <div class="item-img">
+                <!-- empty div (image background is linked in the css) -->
+            </div>
+            <div class="items px-2 right-item">
+                <h1 class="m-heading"><span class="text-primary">Our</span> Team</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae reprehenderit,
+                    explicabo illo, autem ducimus voluptate assumenda, cupiditate quam enim dicta. Ut aut tenetur
+                    expedita?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, adipisci!</p>
+                <h3 class="py-1">People Behind the magic</h3>
+                <ul>
+                    <li>Anih Victor:&nbsp; C E O</li>
+                    <li>James Kalu: &nbsp; C T O</li>
+                    <li>John Smith: &nbsp; C O O</li>
+                    <li>Achigbo Daniel:&nbsp; PROJECT MANAGER</li>
+                    <li>Jane Doe: &nbsp;FINANCE MANAGER</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Clients section -->
+    <section id="clients" class="py-3">
+        <h1 class="text-center m-heading"><span class="text-primary">Our</span> Clients</h1>
+        <span class="underline"></span>
+        <div class="container">
+            <div class="items">
+                <i class="fab fa-asymmetrik fa-4x"></i>
+            </div>
+            <div class="items">
+                <i class="fab fa-css3 fa-4x"></i>
+            </div>
+            <div class="items">
+                <i class="fab fa-angrycreative fa-4x"></i>
+            </div>
+            <div class="items">
+                <i class="fab fa-cpanel fa-4x"></i>
+            </div>
+            <div class="items">
+                <i class="fab fa-cc-diners-club fa-4x"></i>
+            </div>
+        </div>
+    </section>
+    <!-- gallery Section (this is also our company section i couldn't change it by the name bcause I've already styled it-->
+
+    <section id="gallery" class="py-2">
+        <h1 class="text-center m-heading">Our Company</h1>
+        <div class="container-fluid">
+            <div class="item-1">
+                <img src="./img/work_space.jpg" alt="Work space">
+                <div class="description">
+                    <h3>Work Space</h3>
+                    <p>Work space open view</p>
+                </div>
+            </div>
+            <div class="item-1">
+                <img src="./img/class.jpeg" alt="class room">
+                <div class="description">
+                    <h3>Learning Room</h3>
+                    <p>Class room space</p>
+                </div>
+            </div>
+            <div class="item-1">
+                <img src="./img/interns.jpeg" alt="Interns">
+                <div class="description">
+                    <h3>Outside View</h3>
+                    <p>Our Interns outside</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Contacts Section  -->
+    <section id="contact" class="py-2">
+        <div class="container">
+            <div class="contact-form">
+                <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+                <div class="form-wrap">
+                    <p class="text-center">Please fill out the form below to contact us</p>
+                    <form action="process.php">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter a valid email">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="email" id="tel" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="newsletter">
+                <i class="fas fa-envelope fa-3x text-center"></i>
+                <div class="news-area">
+                    <h3 class="text-center s-heading">Subscribe to our newsletter</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="newsletter" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="text-center">
+        <p>Afrik-Hub &copy; 2019 All Right Reserved</p>
+    </footer>
+    <!-- JQuery file -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Local js Files -->
+    <script src="/js/main.js" async></script>
+</body>
+
+</html>

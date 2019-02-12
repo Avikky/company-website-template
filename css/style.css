@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text');
+
+:root {
+    --primary-color: rgba(140, 20, 252, 1);
+    --secondary-color: rgb(169, 78, 255);
+    --main-header-color: #333;
+    --main-bg-color: #ddd;
+    --my-padding: 0.75rem 4rem;
+    --font: serif, 'Noticia Text', 'Varela Round', 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--main-bg-color);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0.75rem 0;
+    line-height: 1.2;
+}
+
+.main-nav #hide {
+    display: none;
+}
+
+/* Utility classes */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+    overflow: auto;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.error-color {
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}
+
+
+.btn:hover {
+    filter: brightness(70%);
+}
+
+.underline {
+    display: block;
+    background: var(--primary-color);
+    width: 50px;
+    height: 10px;
+
+}
+
+.align {
+    padding: var(--my-padding);
+    font-size: 1.3rem;
+}
+
+/* large heading */
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+/* Medium heading */
+.m-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+/* Small Heading */
+.s-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+/* padding for Y-axis */
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2.2rem 0;
+}
+
+.py-3 {
+    padding: 4rem 0;
+}
+
+/* padding for X-axis */
+.px-1 {
+    padding: 0 4rem;
+}
+
+.px-2 {
+    padding: 0 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.handburger {
+    border-radius: 5px;
+    padding: 3px 8px;
+    border: 1px #444 solid;
+}
+
+/* Navbar */
+.main-nav {
+    position: sticky;
+    top: 0;
+    background: var(--main-header-color);
+    color: #fff;
+    padding: 1rem;
+    font-style: bold;
+    z-index: 1;
+}
+
+.main-nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+
+.main-nav ul {
+    display: flex;
+    padding: 0.25rem;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 0.25rem;
+}
+
+
+
+.main-nav ul li a:hover {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+    /* margin-top: -1rem; */
+    background: purple url('../img/showcase.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    /* Overlay */
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#showcase .showcase-content .btn {
+    margin-top: 2rem;
+    width: 10rem;
+}
+
+#showcase .showcase-content .btn:hover {
+    filter: brightness(70%);
+}
+
+#showcase .showcase-content p {
+    padding: var(--my-padding);
+}
+
+/* About section */
+#about {
+    font-family: var(--font);
+}
+
+#about .container {
+    overflow: hidden;
+}
+
+#about .sub-container {
+    display: flex;
+}
+
+.sub-container img {
+    width: 400px;
+    height: 100%;
+}
+
+#about .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#about .item .underline {
+    margin-top: -2.5rem;
+    margin-bottom: 4rem;
+}
+
+/* services */
+#service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font);
+    background: #ccc;
+}
+
+#service .underline {
+    margin-top: -2.5rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+#service .container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#service .container .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#service .container .item i {
+    background: var(--primary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+/* Our Team */
+#our-team {
+    background: #444;
+}
+
+#our-team .container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+#our-team .container-fluid .item-img {
+    background: url(../img/workers.jpeg) no-repeat center center/cover;
+    min-width: 50vw;
+    margin: -1.5rem 0;
+}
+
+#our-team .items ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#our-team .items ul li {
+    padding: 0.5rem;
+    border-bottom: #ddd dotted 1px;
+}
+
+#our-team .right-item {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+#our-team .right-item p {
+    line-height: 1.5;
+    font-family: var(--font);
+}
+
+/* Clients */
+#clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients .underline {
+    margin-top: -2.5rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+#clients .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+#clients .container .items {
+    padding: 2rem;
+    align-self: center;
+}
+
+#clients .container .items .fa-asymmetrik {
+    color: rgb(109, 109, 10);
+}
+
+#clients .container .items .fa-css3 {
+    color: rgb(243, 94, 94);
+}
+
+#clients .container .items .fa-angrycreative {
+    color: orange;
+}
+
+#clients .container .items .fa-cpanel {
+    color: blue;
+}
+
+#clients .container .items .fa-cc-diners-club {
+    color: slateblue;
+}
+
+/* Gallery */
+#gallery {
+    background: #ccc;
+    overflow: hidden;
+}
+
+#gallery img {
+    width: 400px;
+}
+
+#gallery .container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+#gallery .container-fluid .item-1 {
+    padding: 0.56rem 0.2rem;
+}
+
+#gallery .container-fluid .description {
+    width: 400px;
+    padding: .75rem;
+    background: #ddd;
+    border: 1px solid #444;
+}
+
+
+/* Contact Section */
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .container .form-wrap {
+    height: auto;
+    filter: brightness(88%);
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    filter: drop-shadow(8px 20px 18px black);
+}
+
+#contact .container .form-wrap p {
+    font-size: 23px;
+    z-index: 1;
+}
+
+#contact .container .form-wrap label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#contact .container .form-wrap input,
+textarea {
+    width: 100%;
+    padding: 0.45rem;
+    margin-bottom: 0.75rem;
+    border: #ddd 1px solid;
+}
+
+#contact .container .form-wrap button {
+    width: 100%;
+    background: #333;
+    color: #f4f4f4;
+    border: none;
+    padding: 0.75rem 0.35rem;
+    margin-top: 1rem;
+}
+
+#contact .container .form-wrap button:hover,
+button:focus {
+    background: #222;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#contact .container .newsletter {
+    align-self: center;
+    background: #ddd;
+    filter: drop-shadow(8px 20px 18px black);
+}
+
+#contact .container .newsletter i {
+    display: block;
+}
+
+#contact .container .newsletter .news-area {
+    background: var(--primary-color);
+    height: auto;
+    filter: brightness(89%);
+    color: #fff;
+    padding: 1.5rem 2rem;
+}
+
+
+#contact .container .newsletter .news-area .form-group input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+#contact .container .newsletter .news-area button {
+    width: 80%;
+    background: #333;
+    color: #f4f4f4;
+    border: none;
+    padding: 0.75rem 0.35rem;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+#contact .container .newsletter .news-area button:hover,
+button:focus {
+    background: #222;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    padding: 1rem;
+    background: #222;
+}
