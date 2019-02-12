@@ -210,7 +210,15 @@ div.mobile-menu {
 
     /* showcase alignment */
     #showcase .showcase-content h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
+    }
+
+    #showcase .showcase-content {
+        top: 4rem;
+    }
+
+    #showcase .showcase-content .btn {
+        margin-top: -1.8rem;
     }
 
     /* our team section [removing image]*/

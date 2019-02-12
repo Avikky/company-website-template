@@ -31,12 +31,20 @@ menu.addEventListener('click', function myfuction() {
 	createMobileMenu();
 });
 
+window.addEventListener('click', outsideClick);
+
 function createMobileMenu() {
 	if (getElement.style.display === 'none') {
 		getElement.style.display = 'block';
-		//    const overlayMobile =  document.querySelector('#showcase .showcase-content);
+
 	} else {
 		getElement.style.display = 'none';
+	}
+
+	function outsideClick(e) {
+		if (e.target == getElement) {
+			console.log('clicked outside');
+		}
 	}
 }
 
